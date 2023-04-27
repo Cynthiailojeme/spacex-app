@@ -1,0 +1,15 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background: #36a93f;
+  min-height: 70px;
+  box-sizing: border-box;
+}
+
+.navbar__logo {
+  font-size: 40px;
+  color: #fff;
+}

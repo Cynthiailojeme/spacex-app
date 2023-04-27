@@ -1,0 +1,118 @@
+.home {
+  padding: 50px;
+  background-color: #fbfcfd;
+}
+
+.home__launches {
+  min-height: 200px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 24px -4px rgb(39 49 82 / 6%);
+}
+
+.home__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home__nav button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.home__header {
+  font-size: 28px;
+  line-height: 19px;
+  color: #36a93f;
+}
+
+.home__launches table {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.home__launches thead > tr,
+.home__launches tbody > tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  padding: 24px 19px 24px 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cbd6e2;
+}
+
+.home__launches thead > tr {
+  font-weight: 600;
+  color: #33475b;
+  height: 70px;
+}
+
+.home__launches td,
+.home__launches th {
+  width: inherit;
+  text-align: left;
+  overflow-wrap: initial;
+}
+
+.home__launches td:nth-child(1),
+.home__launches th:nth-child(1),
+.home__launches td:nth-child(2),
+.home__launches th:nth-child(2) {
+  width: 130%;
+}
+
+.home__launches td:nth-child(4),
+.home__launches th:nth-child(4),
+.home__launches td:nth-child(5),
+.home__launches th:nth-child(5) {
+  width: 60%;
+}
+
+.home__launches table > a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+
+  .home__launches table {
+    line-height: 30px;
+  }
+
+  .home__launches thead {
+    display: none;
+  }
+
+  .home__launches tbody > tr {
+    display: grid;
+    grid-gap: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .home__launches td {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+  }
+}
